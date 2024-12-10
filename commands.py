@@ -117,6 +117,8 @@ def setup_commands(bot):
             "`!check` - Manually trigger a listing check.\n"
             "`!all` - Fetch all listings.\n"
             "`!bot_help` - Show this help message.\n"
+            "For usage visit https://github.com/icryo/degeneracy/tree/main?tab=readme-ov-file#commands-\n"
+            
         )
         await ctx.send(f"{ctx.author.mention} {commands_list}")
 
@@ -133,3 +135,5 @@ def setup_commands(bot):
         # Insert logic for fetching all listings here.
 
     print(f"Commands after setup: {[cmd.name for cmd in bot.commands]}")
+
+

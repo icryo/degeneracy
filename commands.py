@@ -133,5 +133,3 @@ def setup_commands(bot):
         # Insert logic for fetching all listings here.
 
     print(f"Commands after setup: {[cmd.name for cmd in bot.commands]}")
-
-

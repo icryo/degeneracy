@@ -24,7 +24,6 @@ A Discord bot for monitoring new CS:GO item listings based on specific search pa
    git clone https://github.com/your-repo/csfloat-bot.git
    cd csfloat-bot
 
-
 1.  Install the dependencies:
 
     bash
@@ -80,12 +79,12 @@ You can set the following search parameters dynamically:
 
 **Example:**
 
-plaintext
-
-Copy code
-
-`!set_var market_hash_name ★ M9 Bayonet | Fade
-!set_var min_price 10000`
+`
+   !set_var market_hash_name ★ M9 Bayonet | Fade
+`
+`
+   !set_var max_price 10000
+`
 
 * * * * *
 
@@ -109,7 +108,7 @@ Contributions are welcome! Feel free to submit issues or pull requests.
 
     bash
 
-    Copy code
+
 
     `git checkout -b feature-name`
 

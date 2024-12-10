@@ -50,16 +50,20 @@ async def monitor_listings(bot):
                 item_name = listing.get("item", {}).get("market_hash_name", "Unknown Item")
                 price = listing.get("price", 0) / 100.0
                 inspect_link = listing.get("item", {}).get("inspect_link", "No link available")
+                item_id = listing.get("id", "Unknown ID")  # Fetch the item ID
+                csfloat_link = f"https://csfloat.com/item/{item_id}"  # Construct the link
+
                 message = (
                     f"**New Listing Found:**\n"
                     f"**Item Name:** {item_name}\n"
                     f"**Price:** ${price:.2f}\n"
                     f"**Created At:** {normalized_created_at}\n"
-                    f"**Inspect Link:** {inspect_link}"
+                    f"**Inspect Link:** {inspect_link}\n"
+                    f"**CSFloat Link:** [View Item]({csfloat_link})"
                 )
 
                 # Send Discord notification
-                print(f"Debug: New listing detected: {message}")
+                print(f"New listing detected: {message}")
                 send_discord_notification(message)
 
         except Exception as e:

@@ -1,3 +1,4 @@
+import os
 from discord import Intents
 API_URL = os.getenv("API_URL", "https://csfloat.com/api/v1/listings")
 API_TOKEN = os.getenv("API_TOKEN", "")

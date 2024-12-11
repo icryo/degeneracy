@@ -98,25 +98,18 @@ Contributions are welcome! Feel free to submit issues or pull requests.
 1.  Fork the repository.
 2.  Create a new branch:
 
-    bash
-
-
 
     `git checkout -b feature-name`
 
 3.  Commit your changes:
 
-    bash
 
-    Copy code
 
     `git commit -m "Add new feature"`
 
 4.  Push to your branch:
 
-    bash
 
-    Copy code
 
     `git push origin feature-name`
 

@@ -20,15 +20,11 @@ A Discord bot for monitoring new CS:GO item listings based on specific search pa
 
 ### Installation
 1. Clone the repository:
-   ```bash
+   ```
    git clone https://github.com/icryo/degeneracy
    cd degeneracy
 
 1.  Install the dependencies:
-
-    bash
-
-    Copy code
 
     `pip install -r requirements.txt`
 
@@ -39,10 +35,6 @@ A Discord bot for monitoring new CS:GO item listings based on specific search pa
 
     -   The database (`csfloat_bot.db`) is automatically created when you run the bot.
 4.  Run the bot:
-
-    bash
-
-    Copy code
 
     `python bot.py`
 
